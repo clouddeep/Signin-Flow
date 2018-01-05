@@ -13,6 +13,7 @@
 		0F184F161FFCC43C009C1227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F184F151FFCC43C009C1227 /* Assets.xcassets */; };
 		0F184F191FFCC43C009C1227 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F184F171FFCC43C009C1227 /* LaunchScreen.storyboard */; };
 		0F184F1C1FFCC43C009C1227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F184F1B1FFCC43C009C1227 /* main.m */; };
+		0F184F241FFCC4A2009C1227 /* Entrance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F184F231FFCC4A2009C1227 /* Entrance.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0F184F181FFCC43C009C1227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F184F1A1FFCC43C009C1227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F184F1B1FFCC43C009C1227 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0F184F231FFCC4A2009C1227 /* Entrance.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Entrance.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,8 @@
 		0F184F0B1FFCC43C009C1227 /* Signin Flow */ = {
 			isa = PBXGroup;
 			children = (
+				0F184F391FFF4D35009C1227 /* Class */,
+				0F184F221FFCC491009C1227 /* Support Files */,
 				0F184F0C1FFCC43C009C1227 /* AppDelegate.h */,
 				0F184F0D1FFCC43C009C1227 /* AppDelegate.m */,
 				0F184F0F1FFCC43C009C1227 /* ViewController.h */,
@@ -69,6 +73,21 @@
 				0F184F1B1FFCC43C009C1227 /* main.m */,
 			);
 			path = "Signin Flow";
+			sourceTree = "<group>";
+		};
+		0F184F221FFCC491009C1227 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F184F231FFCC4A2009C1227 /* Entrance.storyboard */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		0F184F391FFF4D35009C1227 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +150,7 @@
 			files = (
 				0F184F191FFCC43C009C1227 /* LaunchScreen.storyboard in Resources */,
 				0F184F161FFCC43C009C1227 /* Assets.xcassets in Resources */,
+				0F184F241FFCC4A2009C1227 /* Entrance.storyboard in Resources */,
 				0F184F141FFCC43C009C1227 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
