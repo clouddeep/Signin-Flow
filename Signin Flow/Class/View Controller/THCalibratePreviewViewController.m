@@ -10,6 +10,7 @@
 #import "THEntranceNavigationController.h"
 
 @interface THCalibratePreviewViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *confirmButton;
 
 @end
 
@@ -26,6 +27,12 @@
 {
     THEntranceNavigationController *nc = (THEntranceNavigationController *)self.navigationController;
     nc.dismissHandler(YES);
+}
+
+- (void)setConfirmButton:(UIButton *)confirmButton
+{
+    [confirmButton setTitle:NSLocalizedString(@"Calibrate Finished", nil) forState:UIControlStateNormal];
+    _confirmButton = confirmButton;
 }
 
 @end
