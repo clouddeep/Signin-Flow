@@ -21,6 +21,17 @@ NSString * const kSeguePreviewCalibate = @"segue preview calibrate";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self navigationBarCustomizedBackItem];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    if (![self.navigationController isNavigationBarHidden]) {
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+    }
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
@@ -34,6 +45,19 @@ NSString * const kSeguePreviewCalibate = @"segue preview calibrate";
     }
 }
 
+- (void)navigationBarCustomizedBackItem
+{
+    UINavigationBar *bar = self.navigationController.navigationBar;
+    
+    UIImage *backImage = [UIImage imageNamed:@"back_arrow"];
+    bar.backIndicatorImage = backImage;
+    bar.backIndicatorTransitionMaskImage = backImage;
+    bar.tintColor = [UIColor whiteColor];
+    bar.barTintColor = [UIColor blackColor];
+    
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"" style:self.navigationItem.backBarButtonItem.style target:nil action:nil];
+    self.navigationItem.backBarButtonItem = item;
+}
 
 #pragma mark - Navigation
 
