@@ -38,10 +38,9 @@ NSString * const kPurchaseLink = @"http://google.com.tw";
 
 - (void)setNoteTextView:(UITextView *)noteTextView
 {
-    NSString *plainText = @"<p>By registering you agree to the <a href=\"https://www.google.com.tw\">Terms</a> and <a href=\"https://www.google.com.tw\">Privacy Policy</a></p>";
+    NSString *plainText = @"<p style=\"color:black;text-align:center;\">By registering you agree to the <a href=\"https://www.google.com.tw\">Terms</a> and <a href=\"https://www.google.com.tw\">Privacy Policy</a></p>";
     NSData *data = [plainText dataUsingEncoding:NSUnicodeStringEncoding];
-    NSError *error;
-    NSAttributedString *linkText = [[NSAttributedString alloc] initWithData:data options:@{NSDocumentTypeDocumentAttribute : NSHTMLTextDocumentType} documentAttributes:nil error:&error];
+    NSAttributedString *linkText = [[NSAttributedString alloc] initWithData:data options:@{NSDocumentTypeDocumentAttribute : NSHTMLTextDocumentType} documentAttributes:nil error:nil];
     
     noteTextView.attributedText = linkText;
     
