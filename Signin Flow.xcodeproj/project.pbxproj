@@ -14,6 +14,14 @@
 		0F184F191FFCC43C009C1227 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F184F171FFCC43C009C1227 /* LaunchScreen.storyboard */; };
 		0F184F1C1FFCC43C009C1227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F184F1B1FFCC43C009C1227 /* main.m */; };
 		0F184F241FFCC4A2009C1227 /* Entrance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F184F231FFCC4A2009C1227 /* Entrance.storyboard */; };
+		0F184F3D1FFF4E17009C1227 /* THRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F184F3C1FFF4E17009C1227 /* THRegisterViewController.m */; };
+		0F184F401FFF4E2B009C1227 /* THQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F184F3F1FFF4E2B009C1227 /* THQRCodeViewController.m */; };
+		0F184F431FFF4E59009C1227 /* THCalibrateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F184F421FFF4E59009C1227 /* THCalibrateViewController.m */; };
+		0F184F461FFF4E6B009C1227 /* THCalibratePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F184F451FFF4E6B009C1227 /* THCalibratePreviewViewController.m */; };
+		0F184F491FFF544A009C1227 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F184F481FFF544A009C1227 /* WebKit.framework */; };
+		0F184F4E1FFF67E9009C1227 /* THQRCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F184F4D1FFF67E9009C1227 /* THQRCodeView.m */; };
+		0F184F5B20027297009C1227 /* THEntranceNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F184F5A20027297009C1227 /* THEntranceNavigationController.m */; };
+		0F184F5E200275E8009C1227 /* THEntranceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F184F5D200275E8009C1227 /* THEntranceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +36,22 @@
 		0F184F1A1FFCC43C009C1227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F184F1B1FFCC43C009C1227 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0F184F231FFCC4A2009C1227 /* Entrance.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Entrance.storyboard; sourceTree = "<group>"; };
+		0F184F3B1FFF4E17009C1227 /* THRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THRegisterViewController.h; sourceTree = "<group>"; };
+		0F184F3C1FFF4E17009C1227 /* THRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THRegisterViewController.m; sourceTree = "<group>"; };
+		0F184F3E1FFF4E2B009C1227 /* THQRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THQRCodeViewController.h; sourceTree = "<group>"; };
+		0F184F3F1FFF4E2B009C1227 /* THQRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THQRCodeViewController.m; sourceTree = "<group>"; };
+		0F184F411FFF4E59009C1227 /* THCalibrateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THCalibrateViewController.h; sourceTree = "<group>"; };
+		0F184F421FFF4E59009C1227 /* THCalibrateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THCalibrateViewController.m; sourceTree = "<group>"; };
+		0F184F441FFF4E6B009C1227 /* THCalibratePreviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THCalibratePreviewViewController.h; sourceTree = "<group>"; };
+		0F184F451FFF4E6B009C1227 /* THCalibratePreviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THCalibratePreviewViewController.m; sourceTree = "<group>"; };
+		0F184F481FFF544A009C1227 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		0F184F4C1FFF67E9009C1227 /* THQRCodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THQRCodeView.h; sourceTree = "<group>"; };
+		0F184F4D1FFF67E9009C1227 /* THQRCodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THQRCodeView.m; sourceTree = "<group>"; };
+		0F184F582000D24C009C1227 /* Signin Flow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Signin Flow.entitlements"; sourceTree = "<group>"; };
+		0F184F5920027297009C1227 /* THEntranceNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THEntranceNavigationController.h; sourceTree = "<group>"; };
+		0F184F5A20027297009C1227 /* THEntranceNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THEntranceNavigationController.m; sourceTree = "<group>"; };
+		0F184F5C200275E8009C1227 /* THEntranceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THEntranceController.h; sourceTree = "<group>"; };
+		0F184F5D200275E8009C1227 /* THEntranceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THEntranceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F184F491FFF544A009C1227 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +71,7 @@
 			children = (
 				0F184F0B1FFCC43C009C1227 /* Signin Flow */,
 				0F184F0A1FFCC43C009C1227 /* Products */,
+				0F184F471FFF544A009C1227 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 		0F184F0B1FFCC43C009C1227 /* Signin Flow */ = {
 			isa = PBXGroup;
 			children = (
+				0F184F582000D24C009C1227 /* Signin Flow.entitlements */,
 				0F184F391FFF4D35009C1227 /* Class */,
 				0F184F221FFCC491009C1227 /* Support Files */,
 				0F184F0C1FFCC43C009C1227 /* AppDelegate.h */,
@@ -86,8 +113,54 @@
 		0F184F391FFF4D35009C1227 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				0F184F4A1FFF67CF009C1227 /* View */,
+				0F184F3A1FFF4D5A009C1227 /* View Controller */,
 			);
 			path = Class;
+			sourceTree = "<group>";
+		};
+		0F184F3A1FFF4D5A009C1227 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0F184F3B1FFF4E17009C1227 /* THRegisterViewController.h */,
+				0F184F3C1FFF4E17009C1227 /* THRegisterViewController.m */,
+				0F184F3E1FFF4E2B009C1227 /* THQRCodeViewController.h */,
+				0F184F3F1FFF4E2B009C1227 /* THQRCodeViewController.m */,
+				0F184F411FFF4E59009C1227 /* THCalibrateViewController.h */,
+				0F184F421FFF4E59009C1227 /* THCalibrateViewController.m */,
+				0F184F441FFF4E6B009C1227 /* THCalibratePreviewViewController.h */,
+				0F184F451FFF4E6B009C1227 /* THCalibratePreviewViewController.m */,
+				0F184F5920027297009C1227 /* THEntranceNavigationController.h */,
+				0F184F5A20027297009C1227 /* THEntranceNavigationController.m */,
+				0F184F5C200275E8009C1227 /* THEntranceController.h */,
+				0F184F5D200275E8009C1227 /* THEntranceController.m */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		0F184F471FFF544A009C1227 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F184F481FFF544A009C1227 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F184F4A1FFF67CF009C1227 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0F184F4B1FFF67D4009C1227 /* View */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0F184F4B1FFF67D4009C1227 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0F184F4C1FFF67E9009C1227 /* THQRCodeView.h */,
+				0F184F4D1FFF67E9009C1227 /* THQRCodeView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +195,14 @@
 					0F184F081FFCC43C009C1227 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -163,7 +244,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F184F111FFCC43C009C1227 /* ViewController.m in Sources */,
+				0F184F5E200275E8009C1227 /* THEntranceController.m in Sources */,
+				0F184F461FFF4E6B009C1227 /* THCalibratePreviewViewController.m in Sources */,
+				0F184F3D1FFF4E17009C1227 /* THRegisterViewController.m in Sources */,
+				0F184F401FFF4E2B009C1227 /* THQRCodeViewController.m in Sources */,
 				0F184F1C1FFCC43C009C1227 /* main.m in Sources */,
+				0F184F431FFF4E59009C1227 /* THCalibrateViewController.m in Sources */,
+				0F184F4E1FFF67E9009C1227 /* THQRCodeView.m in Sources */,
+				0F184F5B20027297009C1227 /* THEntranceNavigationController.m in Sources */,
 				0F184F0E1FFCC43C009C1227 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
