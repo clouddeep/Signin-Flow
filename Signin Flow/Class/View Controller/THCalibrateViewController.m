@@ -19,7 +19,8 @@ NSString * const kSeguePreviewCalibate = @"segue preview calibrate";
 
 @implementation THCalibrateViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
     [self navigationBarCustomizedBackItem];
@@ -71,13 +72,17 @@ NSString * const kSeguePreviewCalibate = @"segue preview calibrate";
 
 - (void)setNoteTextView:(UITextView *)noteTextView
 {
-    NSString *plainText = @"<ul style=\"color:white;font-size:110%\"><li>這是假字</li><li>第一行</li><li>第二行</li><li>第三行</li></ul>";
+    NSString *headText = @"請先進行校正，讓您獲得最好的產品效果";
+    NSString *firstBody = @"請從以上圖片中選出一張最接近白色的圖";
+    NSString *secondBody = @"點擊您選擇的圖片可開啟效果預覽圖";
+    NSString *thirdBody = @"開啟預覽圖後點擊完成以結束產品校正";
+    
+    NSString *plainText = [NSString stringWithFormat:@"<h4 style=\"color:white;\">%@</h4><ul style=\"color:white;\"><li>%@</li><li>%@</li><li>%@</li></ul>", headText, firstBody, secondBody, thirdBody];
     
     NSData *data = [plainText dataUsingEncoding:NSUnicodeStringEncoding];
     NSAttributedString *text = [[NSAttributedString alloc] initWithData:data options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
     noteTextView.attributedText = text;
     _noteTextView = noteTextView;
 }
-
 
 @end

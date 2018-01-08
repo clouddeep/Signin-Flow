@@ -108,8 +108,12 @@ NSString * const kSegueCalibrate = @"segue calibrate";
 
 - (void)setNoteTextView:(UITextView *)noteTextView
 {
-    NSString *plainText = @"<ul style=\"color:white;font-size:110%\"><li>這是假字</li><li>第一行</li><li>第二行</li><li>第三行</li></ul>";
+    NSString *firstBody = @"Scan QR code";
+    NSString *secondBody = @"掃描包裝上的QRCode以認證您購買的官方商品";
+    NSString *thirdBody = @"認證商品可讓您獲得產品使用的相關協助與完整的售後服務";
     
+    NSString *plainText = [NSString stringWithFormat:@"<ul style=\"color:white;\"><li>%@</li><li>%@</li><li>%@</li></ul>", firstBody, secondBody, thirdBody];
+        
     NSData *data = [plainText dataUsingEncoding:NSUnicodeStringEncoding];
     NSAttributedString *text = [[NSAttributedString alloc] initWithData:data options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
     noteTextView.attributedText = text;
