@@ -17,6 +17,7 @@ NSString * const kSegueCalibrate = @"segue calibrate";
 @interface THQRCodeViewController () <THQRCodeViewDelegate>
 @property (weak, nonatomic) IBOutlet THQRCodeView *qrCodeView;
 @property (weak, nonatomic) IBOutlet UITextView *noteTextView;
+@property (weak, nonatomic) IBOutlet UIImageView *centerImageView;
 
 @end
 
@@ -34,6 +35,13 @@ NSString * const kSegueCalibrate = @"segue calibrate";
     [super viewWillDisappear:animated];
     
     [self.qrCodeView stopScanning];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    
+    self.centerImageView.image = [UIImage imageNamed:@"focus_frame_blue"];
 }
 
 - (void)cameraAuthCheck
@@ -91,11 +99,17 @@ NSString * const kSegueCalibrate = @"segue calibrate";
 
 - (void)didScanQRCode:(NSString *)data
 {
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+
     // TODO:: Make login...
     
-    // Debug
-    NSLog(@"%s", __PRETTY_FUNCTION__);
-    [self performSegueWithIdentifier:kSegueCalibrate sender:nil];
+    // If login success, show success mark
+//    self.centerImageView.image =
+    
+    // stay 1 second, go to next view
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self performSegueWithIdentifier:kSegueCalibrate sender:nil];
+    });
 }
 
 #pragma mark - Private
