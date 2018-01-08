@@ -20,9 +20,6 @@
     [super viewDidLoad];
     
     [self.navigationController setNavigationBarHidden:NO animated:NO];
-    
-    UINavigationBar *bar = self.navigationController.navigationBar;
-    bar.barTintColor = [UIColor blackColor];
 }
 
 - (IBAction)registerCompleteAction:(UIButton *)sender
