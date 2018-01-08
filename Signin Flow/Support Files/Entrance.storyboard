@@ -54,9 +54,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioP-d6-SsK">
-                                <rect key="frame" x="342" y="41" width="21" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioP-d6-SsK">
+                                <rect key="frame" x="354" y="20" width="21" height="21"/>
                                 <state key="normal" backgroundImage="btn_close"/>
                                 <connections>
                                     <action selector="dismissFlowAction:" destination="l9n-UJ-NSf" eventType="touchUpInside" id="lLS-Pp-I97"/>
@@ -66,10 +65,12 @@
                                 <rect key="frame" x="141" y="170" width="93" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="By registering you agree to the Terms and Privacy Policy" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0S8-lb-iY1">
-                                <rect key="frame" x="16" y="633" width="343" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="By registering you agree to the Terms and Privacy Policy" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0S8-lb-iY1">
+                                <rect key="frame" x="0.0" y="633" width="375" height="28"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="rd3-gQ-V1l"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -79,6 +80,13 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fSH-Uv-x0j" firstAttribute="bottom" secondItem="0S8-lb-iY1" secondAttribute="bottom" constant="6" id="1rU-Tw-7ql"/>
+                            <constraint firstItem="0S8-lb-iY1" firstAttribute="leading" secondItem="fSH-Uv-x0j" secondAttribute="leading" id="4qi-2F-hF9"/>
+                            <constraint firstItem="fSH-Uv-x0j" firstAttribute="trailing" secondItem="ioP-d6-SsK" secondAttribute="trailing" id="ASP-IF-MhY"/>
+                            <constraint firstItem="ioP-d6-SsK" firstAttribute="top" secondItem="fSH-Uv-x0j" secondAttribute="top" id="GyB-os-cU6"/>
+                            <constraint firstItem="fSH-Uv-x0j" firstAttribute="trailing" secondItem="0S8-lb-iY1" secondAttribute="trailing" id="bVG-BI-Rrt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fSH-Uv-x0j"/>
                     </view>
                     <navigationItem key="navigationItem" id="O59-5E-jFv"/>
@@ -104,20 +112,23 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P2R-Qt-nfz" customClass="THQRCodeView">
                                 <rect key="frame" x="0.0" y="20" width="375" height="517.5"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FOZ-pR-OCO">
-                                        <rect key="frame" x="67" y="194" width="240" height="128"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etd-6M-kBc">
+                                        <rect key="frame" x="342" y="12" width="21" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etd-6M-kBc">
-                                        <rect key="frame" x="337" y="8" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="X"/>
+                                        <state key="normal" image="btn_close"/>
                                         <connections>
                                             <action selector="dismissFlowAction:" destination="4SB-N0-x2X" eventType="touchUpInside" id="gva-CU-1Wg"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="focus_frame_blue" translatesAutoresizingMaskIntoConstraints="NO" id="FOZ-pR-OCO">
+                                        <rect key="frame" x="142" y="214" width="90" height="90"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="FOZ-pR-OCO" firstAttribute="centerY" secondItem="P2R-Qt-nfz" secondAttribute="centerY" id="CMI-oX-4gW"/>
+                                    <constraint firstItem="FOZ-pR-OCO" firstAttribute="centerX" secondItem="P2R-Qt-nfz" secondAttribute="centerX" id="FSv-WE-Jja"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ez-Dt-fMh">
                                 <rect key="frame" x="0.0" y="537.5" width="375" height="129.5"/>
@@ -170,24 +181,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jk9-qo-rxg">
-                                <rect key="frame" x="20" y="50" width="335" height="450"/>
+                                <rect key="frame" x="20" y="42" width="335" height="450"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LHm-19-nO1">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="105"/>
                                         <subviews>
-                                            <imageView tag="11" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_close" translatesAutoresizingMaskIntoConstraints="NO" id="OvD-TI-zGV">
+                                            <imageView tag="11" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_00" translatesAutoresizingMaskIntoConstraints="NO" id="OvD-TI-zGV">
                                                 <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="OvD-TI-zGV" secondAttribute="height" multiplier="1:1" id="Ji2-1z-hrO"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView tag="12" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_close" translatesAutoresizingMaskIntoConstraints="NO" id="Ona-ko-jem">
+                                            <imageView tag="12" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_10" translatesAutoresizingMaskIntoConstraints="NO" id="Ona-ko-jem">
                                                 <rect key="frame" x="115" y="0.0" width="105" height="105"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Ona-ko-jem" secondAttribute="height" multiplier="1:1" id="nrL-Ij-B9t"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView tag="13" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_close" translatesAutoresizingMaskIntoConstraints="NO" id="DcF-KH-Brb">
+                                            <imageView tag="13" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_20" translatesAutoresizingMaskIntoConstraints="NO" id="DcF-KH-Brb">
                                                 <rect key="frame" x="230" y="0.0" width="105" height="105"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="DcF-KH-Brb" secondAttribute="height" multiplier="1:1" id="wM4-gi-hmJ"/>
@@ -203,19 +214,19 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mv4-ZN-f8J">
                                         <rect key="frame" x="0.0" y="115" width="335" height="105"/>
                                         <subviews>
-                                            <imageView tag="21" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_close" translatesAutoresizingMaskIntoConstraints="NO" id="IJK-bN-ddu">
+                                            <imageView tag="21" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_01" translatesAutoresizingMaskIntoConstraints="NO" id="IJK-bN-ddu">
                                                 <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="IJK-bN-ddu" secondAttribute="height" multiplier="1:1" id="KkZ-7b-7eD"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView tag="22" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_close" translatesAutoresizingMaskIntoConstraints="NO" id="rg0-f3-wif">
+                                            <imageView tag="22" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_11" translatesAutoresizingMaskIntoConstraints="NO" id="rg0-f3-wif">
                                                 <rect key="frame" x="115" y="0.0" width="105" height="105"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="rg0-f3-wif" secondAttribute="height" multiplier="1:1" id="R6K-ds-5qm"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView tag="23" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_close" translatesAutoresizingMaskIntoConstraints="NO" id="1P7-Gd-U24">
+                                            <imageView tag="23" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_21" translatesAutoresizingMaskIntoConstraints="NO" id="1P7-Gd-U24">
                                                 <rect key="frame" x="230" y="0.0" width="105" height="105"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="1P7-Gd-U24" secondAttribute="height" multiplier="1:1" id="5Ol-Wr-0wZ"/>
@@ -231,19 +242,19 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fCd-BH-Tb9">
                                         <rect key="frame" x="0.0" y="230" width="335" height="105"/>
                                         <subviews>
-                                            <imageView tag="31" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_close" translatesAutoresizingMaskIntoConstraints="NO" id="EKs-OM-v2C">
+                                            <imageView tag="31" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_02" translatesAutoresizingMaskIntoConstraints="NO" id="EKs-OM-v2C">
                                                 <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="EKs-OM-v2C" secondAttribute="height" multiplier="1:1" id="Eqw-rA-BeN"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView tag="32" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_close" translatesAutoresizingMaskIntoConstraints="NO" id="AkN-qp-YW0">
+                                            <imageView tag="32" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_12" translatesAutoresizingMaskIntoConstraints="NO" id="AkN-qp-YW0">
                                                 <rect key="frame" x="115" y="0.0" width="105" height="105"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="AkN-qp-YW0" secondAttribute="height" multiplier="1:1" id="HAj-zQ-259"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView tag="33" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_close" translatesAutoresizingMaskIntoConstraints="NO" id="ltT-ms-JQC">
+                                            <imageView tag="33" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_22" translatesAutoresizingMaskIntoConstraints="NO" id="ltT-ms-JQC">
                                                 <rect key="frame" x="230" y="0.0" width="105" height="105"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ltT-ms-JQC" secondAttribute="height" multiplier="1:1" id="QJ7-PA-md3"/>
@@ -259,19 +270,19 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wkm-Ge-MtE">
                                         <rect key="frame" x="0.0" y="345" width="335" height="105"/>
                                         <subviews>
-                                            <imageView tag="41" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_close" translatesAutoresizingMaskIntoConstraints="NO" id="vbB-N3-aGR">
+                                            <imageView tag="41" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_03" translatesAutoresizingMaskIntoConstraints="NO" id="vbB-N3-aGR">
                                                 <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="vbB-N3-aGR" secondAttribute="height" multiplier="1:1" id="afR-LU-RGA"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView tag="42" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_close" translatesAutoresizingMaskIntoConstraints="NO" id="IgO-1f-VKe">
+                                            <imageView tag="42" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_13" translatesAutoresizingMaskIntoConstraints="NO" id="IgO-1f-VKe">
                                                 <rect key="frame" x="115" y="0.0" width="105" height="105"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="IgO-1f-VKe" secondAttribute="height" multiplier="1:1" id="Cgm-kt-wez"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView tag="43" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_close" translatesAutoresizingMaskIntoConstraints="NO" id="jBR-Rh-oGU">
+                                            <imageView tag="43" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_23" translatesAutoresizingMaskIntoConstraints="NO" id="jBR-Rh-oGU">
                                                 <rect key="frame" x="230" y="0.0" width="105" height="105"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="jBR-Rh-oGU" secondAttribute="height" multiplier="1:1" id="kjz-6J-78E"/>
@@ -287,21 +298,21 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hGg-Ly-j7s">
-                                <rect key="frame" x="10" y="510" width="355" height="2"/>
+                                <rect key="frame" x="10" y="502" width="355" height="2"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="QVW-v0-lX2"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kio-wT-Ynm">
-                                <rect key="frame" x="345" y="20" width="30" height="30"/>
-                                <state key="normal" title="X"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kio-wT-Ynm">
+                                <rect key="frame" x="354" y="20" width="21" height="22"/>
+                                <state key="normal" image="btn_close"/>
                                 <connections>
                                     <action selector="dismissFlowAction:" destination="70s-11-Rxk" eventType="touchUpInside" id="Udg-0G-hEI"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLb-KH-icB">
-                                <rect key="frame" x="5" y="517" width="365" height="145"/>
+                                <rect key="frame" x="5" y="509" width="365" height="153"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -342,8 +353,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y6W-gq-AXk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preview_image" translatesAutoresizingMaskIntoConstraints="NO" id="Y6W-gq-AXk">
                                 <rect key="frame" x="0.0" y="20" width="375" height="583"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yI-qD-VUK">
                                 <rect key="frame" x="0.0" y="603" width="375" height="64"/>
@@ -399,6 +411,19 @@
         <image name="btn_blue_large" width="138" height="22"/>
         <image name="btn_close" width="21" height="21"/>
         <image name="focus_frame_blue" width="90" height="90"/>
+        <image name="image_00" width="35" height="35"/>
+        <image name="image_01" width="35" height="35"/>
+        <image name="image_02" width="35" height="35"/>
+        <image name="image_03" width="35" height="35"/>
+        <image name="image_10" width="35" height="35"/>
+        <image name="image_11" width="35" height="35"/>
+        <image name="image_12" width="35" height="35"/>
+        <image name="image_13" width="35" height="35"/>
+        <image name="image_20" width="35" height="35"/>
+        <image name="image_21" width="35" height="35"/>
+        <image name="image_22" width="35" height="35"/>
+        <image name="image_23" width="35" height="35"/>
+        <image name="preview_image" width="138" height="184"/>
         <image name="threal_splash" width="93" height="24"/>
     </resources>
 </document>
